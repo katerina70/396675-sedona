@@ -5,9 +5,9 @@
     	<title>HTML Academy: Седона</title>
   </head>
   <body>
-	  <header>
-	  	<div class="container">
-				<nav class="main-navigation">
+		<div class="container">
+	  	<header>
+	  		<nav class="main-navigation">
 					<ul>
 						<li>
 							<a href="#">Информация</a>
@@ -23,109 +23,102 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="logo-city">
-					<img src="" alt="City of Sedona">
+				<div class="logo">
+					<a href="">
+						 <img src="" alt="City of Sedona">
+					</a>
 				</div>
-			</div>
 		</header>	  
-		<main class="container">
 			<div class="greeting">
-				<p>Welcom</p>
-				<p>-to the gorgeous-</p>
-				<p>Sedona</p>
-				<p>"Because the Grand Canyon sucks!"</p>
+				<img src="" alt="Welcome to Sedona!"> 
 			</div>
 			<div class="description">
-				<b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+				<h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
-			<div class="feature-foto">
-				<div class="feature-item-1">
-					<h2>Настоящий городок</h2>
-					<p>-№1-</p>
+			<section class="features features-blue">
+				<div class="reasons-item">
+					<h3>Настоящий городок</h3>
+					<span>- №1 -</span>
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
-				<img src="" alt="Настоящий городок">
-			</div>
-			<div class="feature-foto">
-				<div class="feature-item-2">
-					<h2>Там есть мост дьявола</h2>
-					<p>-№2-</p>
-					<p>Да, по нему можно пройти! Если,конечно, вы осмелитесь</p>
+				<div class="reasons-image">
+					<img src="" alt="Настоящий городок">
 				</div>
-				<img src="" alt="Мост дьявола">
-			</div>
-			<div class="feature-simple">
-				<div class="feature-item">
-					<h2>Небольшая площадь</h2>
-					<p>-№3-</p>
-					<p>Все достопримечательности находятся очень близко</p>
-				</div>
-				<div class="feature-item">
-					<h2>Красивая дорога</h2>
-					<p>-№4-</p>
-					<p>Ехать в Седону из Лас Вегаса совсем не скучно!</p>
-				</div>
-				<div class="feature-item">
-					<h2>Мало туристов</h2>
-					<p>-№5-</p>
-					<p>Большинство едет в Гранд Каньон и толпится там</p>
-				</div>
-			</div>
-			<div class="description-2">
-				<div class="description-item">
-					<h2>Жилье</h2>
+			</section>
+			<section class="advantages">
+				<div class="advantages-item">
+					<h3>Жилье</h3>
 					<p>Мы рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
-				<div class="description-item">
-					<h2>Еда</h2>
+				<div class="advantages-item">
+					<h3>Еда</h3>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
 				</div>
-				<div class="description-item">
-					<h2>Сувениры</h2>
+				<div class="advantages-item">
+					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
-			</div>
-			<div class="hotel">
-				<div class="hotel-offer"> 
-					<b>Заинтересовались?</b>
+			</section>
+			<section class="features features-blue">
+				<div class="reasons-item">
+					<h3>Там есть мост дьявола</h3>
+					<span>- №2 -</span>
+					<p>Да, по нему можно пройти! Если,конечно, вы осмелитесь</p>
+				</div>
+				<div class="reasons-image">
+					<img src="" alt="Мост дьявола">
+				</div>
+			</section>
+			<section class="feature features-grey">
+				<div class="reason-item">
+					<h3>Небольшая площадь</h3>
+					<span>- №3 -</span>
+					<p>Все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="reason-item">
+					<h3>Красивая дорога</h3>
+					<span>- №4 -</span>
+					<p>Ехать в Седону из Лас Вегаса совсем не скучно!</p>
+				</div>
+				<div class="reason-item">
+					<h3>Мало туристов</h3>
+					<span>- №5 -</span>
+					<p>Большинство едет в Гранд Каньон и толпится там</p>
+				</div>
+			</section>
+			<section class="hotel">
+					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предожения гостиниц в Седоне</p>
-				</div>
-				<div class="hotel-book">
-					<h2>Поиск гостиницы в Седоне</h2>
-					<form action="https://echo.htmlacademy.ru" method="get">
-						<label>Дата заезда:
-								<input type="text" name="checkin" id="checkin-field" value="24 апреля 2017">
-								<img src="" alt="Выберите дату заезда">
-						</label>
-						<label>Дата выезда:
-								<input type="text" name="checkout" id="checkout-field" value="4 июля 2017">
-								<img src="" alt="Выберите дату отъезда">
-						</label>
-						<div class="guests-number">
-							<span>Взрослые</span>
-							<div class="number">
-									<span class="minus">-</span>
-    								<input type="text" value="2"/>
-    								<span class="plus">+</span>
-							</div>
-						</div>
-						<div class="guests-number">
-							<span>Дети</span>
-							<div class="number">
-									<span class="minus">-</span>
-    							<input type="text" value="0"/>
-    							<span class="plus">+</span>
-							</div>
-						</div>
-					</form>	
-				</div>
-			</div>
-		</main>
-		<footer>
+					<div class="hotel-look">
+						<a href="">Поиск гостиницы в Седоне</a>
+					</div>
+			</section>
+			<section class="hotel-book">
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<label>Дата заезда:
+						<input type="text" name="checkin" id="checkin-field" value="24 апреля 2017">
+					</label>
+					<label>Дата выезда:
+						<input type="text" name="checkout" id="checkout-field" value="4 июля 2017">
+					</label>
+					<label>Взрослые					
+						<button type="button" name="minus">-</button>
+    				<input type="text" value="2">
+    				<button type="button" name="plus">+</button>
+					</label>
+					<label>Дети
+						<button type="button" name="minus">-</button>
+    				<input type="text" value="0">
+    				<button type="button" name="plus">+</button>
+					</label>
+					<input type="submit" value="Найти">
+				</form>	
+			</section>
+		<footer class="footer">
 			<div class="container">
 					<div class="footer-hashtag">
-						<span>#visitsedona</span>
+						<a href="">#visitsedona</a>
 					</div>
 					<div class="footer-social">
 						<a class="social-twitter" href="#">Твиттер</a>
@@ -139,6 +132,7 @@
 					</div>
 			</div>
 		</footer>
+		</div>
   </body>
 </html>
 
