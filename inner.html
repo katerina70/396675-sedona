@@ -1,173 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    	<meta charset="utf-8">
-    	<title>HTML Academy: Седона</title>
-  </head>
-  <body>
-		<div class="container">
-	  	<header>
-	  		<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Информация</a>
-						</li>
-						<li>
-							<a href="#">Фото и видео</a>
-						</li>
-						<li>
-							<a href="#">Карта штата</a>
-						</li>
-						<li>
-							<a href="#">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="logo">
-					<a href="">
-						 <img src="" alt="City of Sedona">
-					</a>
-				</div>
-		</header>	
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Фото и видео</a>
+					</li>
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+					<li>
+						<a>Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="logo">
+				<a href="index.html">
+					<img src="" alt="City of Sedona">
+				</a>
+			</div>
+		</header>
 		<section class="filter">
 			<form action="https://echo.htmlacademy.ru" method="get">
 				<div class="facilities">
-					<h3>Инфраструктура:</h3>
+					<h2>Инфраструктура:</h2>
 					<label><input name="pool" type="checkbox" checked>Бассейн</label>
 					<label><input name="parking" type="checkbox">Парковка</label>
 					<label><input name="wifi" type="checkbox">WI-FI</label>
 				</div>
 				<div class="property-type">
-					<h3>Тип жилья</h3>
+					<h2>Тип жилья</h2>
 					<label><input name="hotel" type="checkbox" checked>Отель</label>
 					<label><input name="motel" type="checkbox" checked>Мотель</label>
 					<label><input name="apartments" type="checkbox" checked>Апартаменты</label>
 				</div>
 				<div class="price">
-					<div class="price-level">
-						<h3>Стоимость в сутки (р):</h3>
-						<label>От<button type="button"></button></label>
-						<label>До<button type="button"></button></label>
-						<input type="range">
-						<input type="submit" value="Показать">
-					</div>
+					<h2>Стоимость в сутки (р):</h2>
+					<label>От<button type="button"></button></label>
+					<label>До<button type="button"></button></label>
+					<input type="range">
+					<input type="submit" value="Показать">
 				</div>
 			</form>
 		</section>
 		<section class="search-table">
 			<div class="results-number">
-				<h2>Найдено: 3</h2>
+				<h1>Найдено: 3</h1>
 			</div>
 			<div class="sort-bar">
-			<ul>
-				<li>
-					<a href="#">По цене</a>
-				</li>
-				<li>
-					<a href="#">По типу</a>
-				</li>
-				<li>
-					<a href="#">По рейтингу</a>
-				</li>
-			</ul>
+				<ul>
+					<li>
+						<a href="#">По цене</a>
+					</li>
+					<li>
+						<a href="#">По типу</a>
+					</li>
+					<li>
+						<a href="#">По рейтингу</a>
+					</li>
+				</ul>
 			</div>
-			<div class="sort-buttom">
-				<button type="button" name="up"></button>
-				<button type="button" name="down"></button>
+			<div class="sort-button">
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
 			</div>
 		</section>
-		<section class="result-item">
+		<article class="result-item">
 			<div class="result-image">
 				<img src="" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h2>Amara Resort & SPA</h2>
+				<h1>Amara Resort &amp; SPA</h1>
 				<div class="result-description">
 					<span>Гостиница</span>
-					<div class="hotel-link">
-						<a href="#">Подробнее</a>
-					</div>
+					<a href="#">Подробнее</a>
 				</div>
 				<div class="result-booking">
 					<span>От 4000 р.</span>
-					<div class="booking-link">
-						<a href="#">Забронировать</a>
-					</div>
+					<a href="#">Забронировать</a>
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<div class="result-hotel-score">
-					<span>Рейтинг: 8,5</span>
-				</div>	
+				<span>Рейтинг: 8,5</span>
 			</div>
-			</section>
-			<section class="result-item">
+		</article>
+		<article class="result-item">
 			<div class="result-image">
 				<img src="" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h2>Desert Quail Inn</h2>
+				<h1>Desert Quail Inn</h1>
 				<div class="result-description">
 					<span>Мотель</span>
-					<div class="hotel-link">
-						<a href="#">Подробнее</a>
-					</div>
+					<a href="#">Подробнее</a>
 				</div>
 				<div class="result-booking">
 					<span>От 3000 р.</span>
-					<div class="booking-link">
-						<a href="#">Забронировать</a>
-					</div>
+					<a href="#">Забронировать</a>
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<div class="result-hotel-score">
-					<span>Рейтинг: 8,9</span>
-				</div>	
+				<span>Рейтинг: 8,9</span>
 			</div>
-			</section>
-			<section class="result-item">
+		</article>
+		<article class="result-item">
 			<div class="result-image">
 				<img src="" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h2>Villas at Poco Diablo</h2>
+				<h1>Villas at Poco Diablo</h1>
 				<div class="result-description">
 					<span>Апартаменты</span>
-					<div class="hotel-link">
-						<a href="#">Подробнее</a>
-					</div>
+					<a href="#">Подробнее</a>
 				</div>
 				<div class="result-booking">
 					<span>От 2000 р.</span>
-					<div class="booking-link">
-						<a href="#">Забронировать</a>
-					</div>
+					<a href="#">Забронировать</a>
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<div class="result-hotel-score">
-					<span>Рейтинг: 9,2</span>
-				</div>	
+				<span>Рейтинг: 9,2</span>
 			</div>
-			</section>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer-hashtag">
-						<a href="">#visitsedona</a>
-					</div>
-					<div class="footer-social">
-						<a class="social-twitter" href="#">Твиттер</a>
-          	<a class="social-facebook" href="#">Фейсбук</a>
-          	<a class="social-youtube" href="#">You Tube</a>
-					</div>
-					<div class="footer-developer">
-						<a href="https://htmlacademy.ru/intensive/htmlcss">
-							 <img src="" alt="HTML Academy">
-						</a>
-					</div>
+		</article>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-hashtag">
+					<a href="">#visitsedona</a>
 				</div>
-			</footer>
-		</div>
-	</body>
+				<div class="footer-social">
+					<a class="social-twitter" href="#">Твиттер</a>
+					<a class="social-facebook" href="#">Фейсбук</a>
+					<a class="social-youtube" href="#">You Tube</a>
+				</div>
+				<div class="footer-developer">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="" alt="HTML Academy">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
