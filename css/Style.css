@@ -1,14 +1,18 @@
 body {
+	min-width: 1280px;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PTSans Narrow", "Arial", sans-serif;
 	text-transform: uppercase;
 }
 
 h1 {
-	ont-size: 21px;
+	font-size: 28px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
@@ -17,7 +21,7 @@ h1 {
 }
 
 h2 {
-	font-size: 16px;
+	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
@@ -33,3 +37,102 @@ h3 {
 	font-family: "PTSans", "Arial", sans-serif;
 	text-transform: uppercase;
 }
+
+.container {
+	width: 1200px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+.main-navigation {
+	width: 1056px;
+	margin: auto;
+	min-height: 56px;
+}
+
+.greeting {
+	width: 100%;
+}
+
+.description {
+	width: 540px;
+	min-height: 125px;
+	margin: auto;
+	padding: 45px;
+	text-align: center;
+}
+
+.features-blue {
+	background-color: #81b3d2;
+}
+
+.features-grey {
+	background-color: #eeeeee;
+}
+
+.features {
+	height: 255px;
+	font-size: 0;
+}
+
+.reasons-image,
+.reasons-item,
+.advantages-item {
+	display: inline-block;
+}
+
+.reasons-item {
+	width: 280px;
+	height: 135px;
+	padding: 60px;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.advantages {
+	font-size: 0;
+}
+
+.advantages-item {
+	width: 400px;
+	height: 330px;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: top;
+	
+}
+
+.hotel {
+	width: 576px;
+	height: 291px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 473px;
+	text-align: center;
+}
+.hotel h1 {
+	margin-top: 46px;
+	margin-bottom: 13px;
+}
+
+.hotel a {
+	margin-top: 30px;
+}
+
+.footer {
+	font-size: 0;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-developer {
+	display: inline-block;
+	width: 400px;
+	height: 120px;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: top;
+	
+}
+
