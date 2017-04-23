@@ -12,7 +12,7 @@
 	<div class="container">
 		<header>
 			<nav class="main-navigation">
-				<ul>
+				<ul class="main-menu">
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -20,32 +20,37 @@
 						<a href="#">Фото и видео</a>
 					</li>
 					<li>
+						<div class="logo">
+							<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona">
+							</a>
+						</div>
+					</li>
+					<li>
 						<a href="#">Карта штата</a>
 					</li>
 					<li>
-						<a>Гостиницы</a>
+						<a href="inner.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo.png" width="138" height="70" alt="City of Sedona">
-				</a>
-			</div>
 		</header>
 		<section class="filter">
 			<form action="https://echo.htmlacademy.ru" method="get">
 				<div class="facilities">
 					<h2>Инфраструктура:</h2>
-					<label><input name="pool" type="checkbox" checked>Бассейн</label>
-					<label><input name="parking" type="checkbox">Парковка</label>
-					<label><input name="wifi" type="checkbox">WI-FI</label>
+					<ul class="choice">
+						<li><label><input name="pool" type="checkbox" checked>Бассейн</label></li>
+						<li><label><input name="parking" type="checkbox">Парковка</label></li>
+						<li><label><input name="wifi" type="checkbox">WI-FI</label></li>
+					</ul>
 				</div>
 				<div class="property-type">
-					<h2>Тип жилья</h2>
-					<label><input name="hotel" type="checkbox" checked>Отель</label>
-					<label><input name="motel" type="checkbox" checked>Мотель</label>
-					<label><input name="apartments" type="checkbox" checked>Апартаменты</label>
+					<h2>Тип жилья:</h2>
+					<ul class="choice">
+						<li><label><input name="hotel" type="checkbox" checked>Отель</label></li>
+						<li><label><input name="motel" type="checkbox" checked>Мотель</label></li>
+						<li><label><input name="apartments" type="checkbox" checked>Апартаменты</label></li>
+					</ul>
 				</div>
 				<div class="price">
 					<h2>Стоимость в сутки (р):</h2>
@@ -61,6 +66,9 @@
 				<h3>Найдено: 3</h3>
 			</div>
 			<div class="sort-bar">
+				<div class="sort-word">
+					<span>Сортировка:</span>
+				</div>
 				<ul>
 					<li>
 						<a href="#">По цене</a>
@@ -76,10 +84,10 @@
 			<div class="sort-button">
 				<ul>
 					<li>
-						<a href="#"></a>
+						<a href="#">111</a>
 					</li>
 					<li>
-						<a href="#"></a>
+						<a href="#">111</a>
 					</li>
 				</ul>
 			</div>

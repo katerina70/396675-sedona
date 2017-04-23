@@ -12,11 +12,11 @@ body {
 }
 
 h1 {
-	font-size: 28px;
-	line-height: 26px;
+	font-size: 21px;
+	line-height: 24px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PTSans Narrow", "Arial", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -44,15 +44,52 @@ h3 {
 	background-color: #ffffff;
 }
 
+
+/*header - не могу понять, как расставить блоки и как сделать, чтобы логотип "залез" на следующую section!!!*/
+
 .main-navigation {
 	width: 1056px;
-	margin: auto;
-	min-height: 56px;
+	padding: 0 72px;
 }
+
+.main-menu {
+	padding: 0;
+	display: block;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.logo {
+	width: 138px;
+	margin-top: 0;
+	margin-bottom: -15px;
+}
+
+.main-menu :last-child {
+	margin-right: 0;
+	margin-left: 60px;
+}
+
+.main-menu :first-child {
+	margin-left: 0;
+	margin-right: 60px;
+}
+
+
+/* greeting in index*/
 
 .greeting {
 	width: 100%;
 }
+
+
+/* description in index*/
 
 .description {
 	width: 540px;
@@ -61,6 +98,9 @@ h3 {
 	padding: 45px;
 	text-align: center;
 }
+
+
+/*features, advantages - вставить иконки в advantages-items не успела*/
 
 .features-blue {
 	background-color: #81b3d2;
@@ -71,8 +111,8 @@ h3 {
 }
 
 .features {
-	height: 255px;
 	font-size: 0;
+	line-height: 0;
 }
 
 .reasons-image,
@@ -82,11 +122,14 @@ h3 {
 }
 
 .reasons-item {
-	width: 280px;
-	height: 135px;
-	padding: 60px;
+	width: 360px;
+	padding-top: 35px;
+	padding-bottom: 57px;
+	padding-left: 20px;
+	padding-right: 20px;
 	text-align: center;
 	font-size: 14px;
+	line-height: 21px;
 	vertical-align: top;
 }
 
@@ -95,33 +138,72 @@ h3 {
 }
 
 .advantages-item {
-	width: 400px;
-	height: 330px;
+	width: 340px;
+	padding-top: 154px;
+	padding-bottom: 79px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: center;
 	font-size: 14px;
-	vertical-align: top;
-	
+	vertical-align: middle;
 }
 
+
+/*hotel, hotel-book*/
+
 .hotel {
-	width: 576px;
-	height: 291px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 473px;
+	width: 1200px;
 	text-align: center;
 }
+
 .hotel h1 {
 	margin-top: 46px;
 	margin-bottom: 13px;
 }
 
-.hotel a {
-	margin-top: 30px;
+.hotel p {
+	width: 440px;
+	margin: 0 auto;
 }
 
+.hotel a {
+	display: block;
+	width: 568px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #766357
+}
+
+
+/*окно поиска hotel-book - сделать не успела*/
+
+.hotel-book {
+	width: 1200px;
+	background-image: url(img/map.png);
+	padding-top: 0;
+}
+
+.hotel-book form {
+	width: 568px;
+	height: 396px;
+	margin: 0 auto;
+}
+
+
+/*footer - иконки вставить не успела*/
+
 .footer {
+	width: 1200px;
 	font-size: 0;
+	padding-bottom: 36px;
+	padding-top: 36px;
 }
 
 .footer-hashtag,
@@ -129,10 +211,191 @@ h3 {
 .footer-developer {
 	display: inline-block;
 	width: 400px;
-	height: 120px;
 	text-align: center;
 	font-size: 14px;
-	vertical-align: top;
-	
+	vertical-align: middle;
 }
 
+
+/* форма поиска гостиницы по критериям - filter*/
+
+.filter {
+	width: 1200px;
+	background-image: url("img/greeting-hotels.jpg");
+	font-size: 0;
+	line-height: 0;
+}
+
+.filter form {
+	width: 1056px;
+	padding-top: 18px;
+	padding-bottom: 30px;
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+.facilities,
+.property-type,
+.price,
+.results-number,
+.sort-bar,
+.sort-button,
+.result-image,
+.result-description,
+.result-booking,
+.result-hotel-level,
+.result-hotel {
+	display: inline-block;
+}
+
+.facilities {
+	width: 145px;
+	margin-right: 110px;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.choice {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.choice li {
+	display: block;
+	padding-top: 18px;
+}
+
+.property-type {
+	width: 145px;
+	vertical-align: top;
+	margin-right: 338px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/*этот блок не успела*/
+.price {
+	width: 318px;
+	font-size: 14px;
+	line-height: 21px;
+	vertical-align: top;
+}
+
+
+/*search-table - вставила 111 вместо иконок, чтобы понятно было, где они находятся*/
+
+.search-table {
+	width: 1056px;
+	padding: 22px 72px;
+	font-size: 0;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.results-number {
+	width: 165px;
+	vertical-align: middle;
+}
+
+.sort-bar {
+	width: 370px;
+}
+
+.sort-bar a {
+	text-decoration: none;
+}
+
+.sort-word {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.search-table ul {
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.sort-bar li {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.sort-button ul {
+	margin-left: 450px;
+}
+
+.sort-button li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 0;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+
+/*articles inner*/
+
+.result-item {
+	width: 1056px;
+	padding: 31px 72px;
+	font-size: 0;
+	line-height: 0;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.result-image {
+	width: 135px;
+	vertical-align: bottom;
+}
+
+.result-hotel {
+	width: 266px;
+	margin-left: 30px;
+	vertical-align: bottom;
+}
+
+.result-description,
+.result-booking {
+	width: 120px;
+	margin-top: -5px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.result-description a,
+.result-booking a {
+	display: block;
+	height: 26px;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fefefe;
+}
+
+.result-description a {
+	width: 110px;
+	background-color: #81b3d2;
+}
+
+.result-booking a {
+	width: 142px;
+	background-color: #766357
+}
+
+.result-hotel-level {
+	width: 111px;
+	margin-left: 504px;
+	margin-right: 0;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #f2f2f2;
+	vertical-align: bottom;
+}
