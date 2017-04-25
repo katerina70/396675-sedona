@@ -45,40 +45,56 @@ h3 {
 }
 
 
-/*header - не могу понять, как расставить блоки и как сделать, чтобы логотип "залез" на следующую section!!!*/
+/*header*/
 
 .main-navigation {
-	width: 1056px;
-	padding: 0 72px;
+	width: 1200px;
 }
 
 .main-menu {
+	width: 1200px;
 	padding: 0;
-	display: block;
 	list-style: none;
 	font-size: 0;
 }
 
 .main-menu li {
+	width: 240px;
+	padding: 17px 0;
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 14px;
 }
 
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2) {
+	width: 168px;
+	padding-left: 72px;
+	text-align: left;
+}
+
+.main-menu li:nth-child(2) {
+	margin-right: 240px;
+}
+
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
+	width: 168px;
+	padding-right: 72px;
+	text-align: right;
+}
+
+.main-menu a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
 .logo {
-	width: 138px;
-	margin-top: 0;
-	margin-bottom: -15px;
-}
-
-.main-menu :last-child {
-	margin-right: 0;
-	margin-left: 60px;
-}
-
-.main-menu :first-child {
-	margin-left: 0;
-	margin-right: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
 }
 
 
@@ -182,18 +198,69 @@ h3 {
 }
 
 
-/*окно поиска hotel-book - сделать не успела*/
+/*окно поиска hotel-book - не могу понять, как ровно расставить кнопки и окна*/
 
 .hotel-book {
 	width: 1200px;
-	background-image: url(img/map.png);
+	height: 472px;
+	background-image: url(../img/map.png);
 	padding-top: 0;
 }
 
 .hotel-book form {
-	width: 568px;
-	height: 396px;
-	margin: 0 auto;
+	width: 456px;
+	padding: 56px;
+	margin-top: 0;
+	margin-bottom: 79px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	font-size: 0;
+}
+
+.hotel-book label {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.hotel-book input[type="text"] {
+	display: inline-block;
+	width: 325px;
+	height: 39px;
+	margin-bottom: 30px;
+	margin-right: 0;
+	padding-left: 13px;
+	border: 0;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.hotel-book input[type="number"],
+.hotel-book button[type="button"] {
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+	margin-bottom: 56px;
+	border: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hotel-book input[type="submit"] {
+	width: 456px;
+	height: 58px;
+	border: 0;
+	padding: 0;
+	margin-bottom: 0;
+	background-color: #81b3d2;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 
@@ -221,17 +288,24 @@ h3 {
 
 .filter {
 	width: 1200px;
-	background-image: url("img/greeting-hotels.jpg");
+	background-image: url("../img/greeting-hotels.jpg");
 	font-size: 0;
 	line-height: 0;
 }
 
 .filter form {
 	width: 1056px;
-	padding-top: 18px;
+	padding-top: 17px;
 	padding-bottom: 30px;
 	padding-left: 72px;
 	padding-right: 72px;
+}
+
+.filter {
+	color: #ffffff;
+}
+.filter h2 {
+	color: #ffffff;
 }
 
 .facilities,
@@ -275,7 +349,9 @@ h3 {
 	line-height: 21px;
 }
 
-/*этот блок не успела*/
+
+/*этот блок не успела -  а теперь вообще не знаю, как к нему подступиться!*/
+
 .price {
 	width: 318px;
 	font-size: 14px;
@@ -283,6 +359,9 @@ h3 {
 	vertical-align: top;
 }
 
+button[type="button"] {
+	
+}
 
 /*search-table - вставила 111 вместо иконок, чтобы понятно было, где они находятся*/
 
@@ -342,8 +421,8 @@ h3 {
 /*articles inner*/
 
 .result-item {
-	width: 1056px;
-	padding: 31px 72px;
+	width: 1200px;
+	padding: 31px 0;
 	font-size: 0;
 	line-height: 0;
 	border-bottom: 2px solid #e5e5e5;
@@ -351,12 +430,13 @@ h3 {
 
 .result-image {
 	width: 135px;
+	padding-left: 72px;
+	padding-right: 31px;
 	vertical-align: bottom;
 }
 
 .result-hotel {
-	width: 266px;
-	margin-left: 30px;
+	width: 790px;
 	vertical-align: bottom;
 }
 
@@ -390,9 +470,8 @@ h3 {
 }
 
 .result-hotel-level {
-	width: 111px;
-	margin-left: 504px;
-	margin-right: 0;
+	width: 100px;
+	margin-right: 72px;
 	font-size: 14px;
 	line-height: 24px;
 	text-align: center;
