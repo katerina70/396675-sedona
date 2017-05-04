@@ -37,25 +37,33 @@
 				<div class="facilities">
 					<h2>Инфраструктура:</h2>
 					<ul class="choice">
-						<li><label><input name="pool" type="checkbox" checked>Бассейн</label></li>
-						<li><label><input name="parking" type="checkbox">Парковка</label></li>
-						<li><label><input name="wifi" type="checkbox">WI-FI</label></li>
+						<li><input type="checkbox" id="pool" checked><label for="pool">Бассейн</label></li>
+						<li><input type="checkbox" id="parking"><label for="parking">Парковка</label></li>
+						<li><input type="checkbox" id="wifi"><label for="wifi">WI-FI</label></li>
 					</ul>
 				</div>
 				<div class="property-type">
 					<h2>Тип жилья:</h2>
 					<ul class="choice">
-						<li><label><input name="hotel" type="checkbox" checked>Отель</label></li>
-						<li><label><input name="motel" type="checkbox" checked>Мотель</label></li>
-						<li><label><input name="apartments" type="checkbox" checked>Апартаменты</label></li>
+						<li><input type="checkbox" id="hotel" checked><label for="hotel">Гостиница</label></li>
+						<li><input type="checkbox" id="motel" checked><label for="motel">Мотель</label></li>
+						<li><input type="checkbox" id="apartments" checked><label for="apartments">Апартаменты</label></li>
 					</ul>
 				</div>
 				<div class="price">
 					<h2>Стоимость в сутки (р):</h2>
-					<label>От<button type="button"></button></label>
-					<label>До<button type="button"></button></label>
-					<input type="range">
-					<input type="submit" value="Показать">
+					<div class="price-controls">
+						<label class="min-price">от<input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+					</div>
+					<button class="btn-transparent" type="submit">Показать</button>
 				</div>
 			</form>
 		</section>
@@ -82,10 +90,10 @@
 			<div class="sort-button">
 				<ul>
 					<li>
-						<a href="#">111</a>
+						<a class="up" href="#"></a>
 					</li>
 					<li>
-						<a href="#">111</a>
+						<a class="down" href="#"></a>
 					</li>
 				</ul>
 			</div>
@@ -95,7 +103,7 @@
 				<img src="img/amara-resort.jpg" width="135" height="90" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h1><a href="#">Amara Resort &amp; SPA</a></h1>
+				<h1><a class="hotel-name" href="#">Amara Resort &amp; SPA</a></h1>
 				<div class="result-description">
 					<span>Гостиница</span>
 					<a href="#">Подробнее</a>
@@ -106,7 +114,8 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span>Рейтинг: 8,5</span>
+				<span class="stars stars-four"></span>
+				<span class="rating">Рейтинг: 8,5</span>
 			</div>
 		</article>
 		<article class="result-item">
@@ -114,7 +123,7 @@
 				<img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h1><a href="#">Desert Quail Inn</a></h1>
+				<h1><a class="hotel-name" href="#">Desert Quail Inn</a></h1>
 				<div class="result-description">
 					<span>Мотель</span>
 					<a href="#">Подробнее</a>
@@ -125,7 +134,8 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span>Рейтинг: 8,9</span>
+				<span class="stars stars-three">111</span>
+				<span class="rating">Рейтинг: 8,9</span>
 			</div>
 		</article>
 		<article class="result-item">
@@ -133,7 +143,7 @@
 				<img src="img/villas.jpg" width="135" height="90" alt="Фото отеля">
 			</div>
 			<div class="result-hotel">
-				<h1><a href="#">Villas at Poco Diablo</a></h1>
+				<h1><a class="hotel-name" href="#">Villas at Poco Diablo</a></h1>
 				<div class="result-description">
 					<span>Апартаменты</span>
 					<a href="#">Подробнее</a>
@@ -144,24 +154,23 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span>Рейтинг: 9,2</span>
+				<span class="stars stars-two">111</span>
+				<span class="rating">Рейтинг: 9,2</span>
 			</div>
 		</article>
 		<footer class="footer">
-			<div class="container">
-				<div class="footer-hashtag">
-					<a href="">#visitsedona</a>
-				</div>
-				<div class="footer-social">
-					<a class="social-twitter" href="#">Твиттер</a>
-					<a class="social-facebook" href="#">Фейсбук</a>
-					<a class="social-youtube" href="#">You Tube</a>
-				</div>
-				<div class="footer-developer">
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/html-academy-black.png" width="195" height="39" alt="HTML Academy">
-					</a>
-				</div>
+			<div class="footer-hashtag">
+				<a href="#">#visitsedona</a>
+			</div>
+			<div class="footer-social">
+				<a class="social-btn social-twitter" href="#">Твиттер</a>
+				<a class="social-btn social-facebook" href="#">Фейсбук</a>
+				<a class="social-btn social-youtube" href="#">You Tube</a>
+			</div>
+			<div class="footer-developer">
+				<a href="https://htmlacademy.ru/intensive/htmlcss">
+					<img src="img/html-academy-black.png" width="195" height="39" alt="HTML Academy">
+				</a>
 			</div>
 		</footer>
 	</div>

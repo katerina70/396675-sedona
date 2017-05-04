@@ -4,8 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> /*
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">*/
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -36,29 +40,29 @@
 			<img src="img/greeting.jpg" width="1200" height="591" alt="Welcome to Sedona!">
 		</section>
 		<section class="description">
-			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<h2>Седона &#8212 небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</section>
 		<section class="features features-blue">
 			<div class="reasons-item">
 				<h2>Настоящий городок</h2>
-				<span>- №1 -</span>
-				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				<span>&#8212 №1 &#8212</span>
+				<p>Седона &#8212 не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
 			<div class="reasons-image">
 				<img src="img/real-town.jpg" width="800" height="255" alt="Настоящий городок">
 			</div>
 		</section>
 		<section class="advantages">
-			<div class="advantages-item">
+			<div class="advantages-item property">
 				<h2>Жилье</h2>
-				<p>Мы рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
-			<div class="advantages-item">
+			<div class="advantages-item food">
 				<h2>Еда</h2>
 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
 			</div>
-			<div class="advantages-item">
+			<div class="advantages-item souvenirs">
 				<h2>Сувениры</h2>
 				<p>Не только китайского, но и местного производства!</p>
 			</div>
@@ -69,24 +73,24 @@
 			</div>
 			<div class="reasons-item">
 				<h2>Там есть мост дьявола</h2>
-				<span>- №2 -</span>
-				<p>Да, по нему можно пройти! Если,конечно, вы осмелитесь</p>
+				<span>&#8212 №2 &#8212</span>
+				<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 			</div>
 		</section>
 		<section class="features features-grey">
 			<div class="reasons-item">
 				<h2>Небольшая площадь</h2>
-				<span>- №3 -</span>
+				<span>&#8212 №3 &#8212</span>
 				<p>Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="reasons-item">
 				<h2>Красивая дорога</h2>
-				<span>- №4 -</span>
+				<span>&#8212 №4 &#8212</span>
 				<p>Ехать в Седону из Лас Вегаса совсем не скучно!</p>
 			</div>
 			<div class="reasons-item">
 				<h2>Мало туристов</h2>
-				<span>- №5 -</span>
+				<span>&#8212 №5 &#8212</span>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>
 			</div>
 		</section>
@@ -96,39 +100,43 @@
 			<a href="#">Поиск гостиницы в Седоне</a>
 		</section>
 		<section class="hotel-book">
-			<form action="https://echo.htmlacademy.ru" method="get">
-				<label>Дата заезда:
-						<input type="text" name="checkin" id="checkin-field" value="24 апреля 2017">
-					</label>
-				<label>Дата выезда:
-						<input type="text" name="checkout" id="checkout-field" value="4 июля 2017">
-					</label>
-				<label for="guest-number-1">Взрослые:</label>
-				<button type="button" name="minus">-</button>
-				<input type="number" id="guest-number-1" value="2">
-				<button type="button" name="plus">+</button>
-				<label for="guest-number-2">Дети:</label>
-				<button type="button" name="minus">-</button>
-				<input type="number" id="guest-number-2" value="0">
-				<button type="button" name="plus">+</button>
-				<input type="submit" value="Найти">
-			</form>
+			<div class="hotel-book-window">
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<div class="booking-dates">
+						<label for="check-in">Дата заезда:</label>
+						<input type="text" id="check-in" value="24 апреля 2017">
+					</div>
+					<div class="booking-dates">
+						<label for="check-out">Дата выезда:</label>
+						<input type="text" id="check-out" value="4 июля 2017">
+					</div>
+					<div class="booking-adult">
+						<label for="guest-number-1">Взрослые:</label>
+						<button type="button" class="minus">&#8212</button>
+						<input type="number" id="guest-number-1" value="2">
+						<button type="button" class="plus">+</button>
+					</div>
+					<div class="booking-children">
+						<label for="guest-number-2">Дети:</label>
+						<button type="button" class="minus">&#8212</button>
+						<input type="number" id="guest-number-2" value="0">
+						<button type="button" сlass="plus">+</button>
+					</div>
+					<input type="submit" value="Найти">
+				</form>
+			</div>
 		</section>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-hashtag">
-					<a href="#">#visitsedona</a>
-				</div>
-				<div class="footer-social">
-					<a class="social-twitter" href="#">Твиттер</a>
-					<a class="social-facebook" href="#">Фейсбук</a>
-					<a class="social-youtube" href="#">You Tube</a>
-				</div>
-				<div class="footer-developer">
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/html-academy-black.png" width="195" height="39" alt="HTML Academy">
-					</a>
-				</div>
+		<footer class="footer index-page">
+			<div class="footer-hashtag">
+				<a href="#">#visitsedona</a>
+			</div>
+			<div class="footer-social">
+				<a class="social-btn social-twitter" href="#">Твиттер</a>
+				<a class="social-btn social-facebook" href="#">Фейсбук</a>
+				<a class="social-btn social-youtube" href="#">You Tube</a>
+			</div>
+			<div class="footer-developer">
+				<a href="https://htmlacademy.ru/intensive/htmlcss"> </a>
 			</div>
 		</footer>
 	</div>

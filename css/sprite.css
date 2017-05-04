@@ -1,185 +1,191 @@
 .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-image: url(spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
 }
 
 .sprite-calendar-black {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -5px;
+	width: 21px;
+	height: 22px;
+	background-position: -5px -5px;
 }
 
 .sprite-calendar-blue {
-    width: 21px;
-    height: 22px;
-    background-position: -36px -5px;
+	width: 21px;
+	height: 22px;
+	background-position: -5px -37px;
 }
 
 .sprite-calendar-grey {
-    width: 21px;
-    height: 22px;
-    background-position: -67px -5px;
+	width: 21px;
+	height: 22px;
+	background-position: -5px -69px;
 }
 
 .sprite-checked-grey {
-    width: 26px;
-    height: 22px;
-    background-position: -98px -5px;
+	width: 26px;
+	height: 22px;
+	background-position: -5px -101px;
 }
 
 .sprite-checked-white {
-    width: 26px;
-    height: 22px;
-    background-position: -134px -5px;
+	width: 26px;
+	height: 22px;
+	background-position: -5px -133px;
 }
 
 .sprite-down-black {
-    width: 11px;
-    height: 10px;
-    background-position: -170px -5px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -165px;
 }
 
 .sprite-down-blue {
-    width: 11px;
-    height: 10px;
-    background-position: -191px -5px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -185px;
 }
 
 .sprite-down-grey {
-    width: 11px;
-    height: 10px;
-    background-position: -212px -5px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -205px;
 }
 
 .sprite-facebook-dark {
-    width: 47px;
-    height: 48px;
-    background-position: -170px -25px;
+	width: 47px;
+	height: 48px;
+	background-position: -5px -225px;
 }
 
 .sprite-facebook-light {
-    width: 47px;
-    height: 48px;
-    background-position: -5px -83px;
+	width: 47px;
+	height: 48px;
+	background-position: -5px -283px;
 }
 
 .sprite-facebook-normal {
-    width: 47px;
-    height: 48px;
-    background-position: -62px -83px;
+	width: 47px;
+	height: 48px;
+	background-position: -5px -341px;
 }
 
 .sprite-food {
-    width: 74px;
-    height: 70px;
-    background-position: -119px -83px;
+	width: 74px;
+	height: 70px;
+	background-position: -5px -399px;
+}
+
+.sprite-food-_-_____ {
+	width: 74px;
+	height: 70px;
+	background-position: -5px -479px;
 }
 
 .sprite-four-stars {
-    width: 89px;
-    height: 17px;
-    background-position: -5px -163px;
+	width: 89px;
+	height: 17px;
+	background-position: -5px -559px;
 }
 
 .sprite-property {
-    width: 75px;
-    height: 72px;
-    background-position: -104px -163px;
+	width: 75px;
+	height: 72px;
+	background-position: -5px -586px;
 }
 
 .sprite-radio-blue {
-    width: 20px;
-    height: 23px;
-    background-position: -233px -5px;
+	width: 20px;
+	height: 23px;
+	background-position: -5px -668px;
 }
 
 .sprite-radio-grey {
-    width: 20px;
-    height: 23px;
-    background-position: -5px -38px;
+	width: 20px;
+	height: 23px;
+	background-position: -5px -701px;
 }
 
 .sprite-souvenirs {
-    width: 64px;
-    height: 76px;
-    background-position: -189px -163px;
+	width: 64px;
+	height: 76px;
+	background-position: -5px -734px;
 }
 
 .sprite-three-stars {
-    width: 65px;
-    height: 17px;
-    background-position: -263px -5px;
+	width: 65px;
+	height: 17px;
+	background-position: -5px -820px;
 }
 
 .sprite-twitter-dark {
-    width: 46px;
-    height: 48px;
-    background-position: -263px -32px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -847px;
 }
 
 .sprite-twitter-light {
-    width: 46px;
-    height: 48px;
-    background-position: -203px -90px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -905px;
 }
 
 .sprite-twitter-normal {
-    width: 46px;
-    height: 48px;
-    background-position: -259px -90px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -963px;
 }
 
 .sprite-two-stars {
-    width: 42px;
-    height: 17px;
-    background-position: -263px -148px;
+	width: 42px;
+	height: 17px;
+	background-position: -5px -1021px;
 }
 
 .sprite-unchecked-grey {
-    width: 22px;
-    height: 22px;
-    background-position: -263px -175px;
+	width: 22px;
+	height: 22px;
+	background-position: -5px -1048px;
 }
 
 .sprite-unchecked-white {
-    width: 22px;
-    height: 22px;
-    background-position: -295px -175px;
+	width: 22px;
+	height: 22px;
+	background-position: -5px -1080px;
 }
 
 .sprite-up-black {
-    width: 11px;
-    height: 10px;
-    background-position: -319px -32px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -1112px;
 }
 
 .sprite-up-blue {
-    width: 11px;
-    height: 10px;
-    background-position: -35px -52px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -1132px;
 }
 
 .sprite-up-grey {
-    width: 11px;
-    height: 10px;
-    background-position: -56px -52px;
+	width: 11px;
+	height: 10px;
+	background-position: -5px -1152px;
 }
 
 .sprite-you-tube-dark {
-    width: 46px;
-    height: 48px;
-    background-position: -5px -207px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -1172px;
 }
 
 .sprite-you-tube-light {
-    width: 46px;
-    height: 48px;
-    background-position: -263px -207px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -1230px;
 }
 
 .sprite-you-tube-normal {
-    width: 46px;
-    height: 48px;
-    background-position: -340px -5px;
+	width: 46px;
+	height: 48px;
+	background-position: -5px -1288px;
 }
