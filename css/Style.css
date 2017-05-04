@@ -291,11 +291,29 @@ h3 {
 	font-size: 14px;
 }
 
+.main-menu a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
 .main-menu a:hover {
 	color: #81b3d2;
 }
 
 .main-menu a:active {
+	color: #cacaca;
+}
+
+.main-menu .current {
+	color: #766357;
+}
+
+.main-menu .current:hover {
+	color: #81b3d2;
+}
+
+.main-menu .current:active {
 	color: #cacaca;
 }
 
@@ -315,12 +333,6 @@ h3 {
 	width: 168px;
 	padding-right: 72px;
 	text-align: right;
-}
-
-.main-menu a {
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold;
 }
 
 .logo {
@@ -1214,6 +1226,12 @@ input[type="checkbox"]:disabled:checked+label::after {
 	background-position: -10px -334px;
 }
 
+.current-button::before {
+	width: 11px;
+	height: 10px;
+	background-position: -10px -334px;
+}
+
 
 /*articles inner*/
 
@@ -1222,7 +1240,7 @@ input[type="checkbox"]:disabled:checked+label::after {
 	padding: 30px 72px;
 	font-size: 0;
 	line-height: 0;
-	border-bottom: 2px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .result-image {
