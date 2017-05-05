@@ -1067,7 +1067,6 @@ input[type="checkbox"]:disabled:checked+label::after {
 .price-controls input {
 	width: 40px;
 	height: 34px;
-	margin: 0;
 	padding: 0;
 	line-height: 34px;
 	color: inherit;
@@ -1075,6 +1074,15 @@ input[type="checkbox"]:disabled:checked+label::after {
 	background: none;
 	border: none;
 	text-align: left;
+}
+
+.from {
+	margin: 0;
+	margin-left: 5px;
+}
+
+.till {
+	margin: 0;
 }
 
 .range-controls {
