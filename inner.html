@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
@@ -37,24 +37,24 @@
 				<div class="facilities">
 					<h2>Инфраструктура:</h2>
 					<ul class="choice">
-						<li><input type="checkbox" id="pool" checked><label for="pool">Бассейн</label></li>
-						<li><input type="checkbox" id="parking"><label for="parking">Парковка</label></li>
-						<li><input type="checkbox" id="wifi"><label for="wifi">WI-FI</label></li>
+						<li><input type="checkbox" id="pool" name="check-pool" checked><label for="pool">Бассейн</label></li>
+						<li><input type="checkbox" id="parking" name="check-parking"><label for="parking">Парковка</label></li>
+						<li><input type="checkbox" id="wifi" name="check-wifi"><label for="wifi">WI-FI</label></li>
 					</ul>
 				</div>
 				<div class="property-type">
 					<h2>Тип жилья:</h2>
 					<ul class="choice">
-						<li><input type="checkbox" id="hotel" checked><label for="hotel">Гостиница</label></li>
-						<li><input type="checkbox" id="motel" checked><label for="motel">Мотель</label></li>
-						<li><input type="checkbox" id="apartments" checked><label for="apartments">Апартаменты</label></li>
+						<li><input type="checkbox" id="hotel" name="check-hotel" checked><label for="hotel">Гостиница</label></li>
+						<li><input type="checkbox" id="motel" name="check-motel" checked><label for="motel">Мотель</label></li>
+						<li><input type="checkbox" id="apartments" name="check-apartments" checked><label for="apartments">Апартаменты</label></li>
 					</ul>
 				</div>
 				<div class="price">
 					<h2>Стоимость в сутки (р):</h2>
 					<div class="price-controls">
-						<label for="min" class="min-price">от<input type="text" class="from" id="min" value="0"></label>
-						<label for="max" class="max-price">до <input  type="text" class="till" id="max" value="3000"></label>
+						<label for="min" class="min-price">от<input type="text" class="from" id="min" name="price-from" value="0"></label>
+						<label for="max" class="max-price">до <input  type="text" class="till" id="max" name="price-till" value="3000"></label>
 					</div>
 					<div class="range-controls">
 						<div class="scale">
@@ -63,7 +63,7 @@
 							<div class="range-toggle range-toggle-max"></div>
 						</div>
 					</div>
-					<button class="btn-transparent" type="submit">Показать</button>
+					<button class="btn-transparent" type="submit" name="show">Показать</button>
 				</div>
 			</form>
 		</section>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span class="stars stars-four"></span>
+				<span class="stars stars-four">Четыре звезды</span>
 				<span class="rating">Рейтинг: 8,5</span>
 			</div>
 		</article>
@@ -134,7 +134,7 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span class="stars stars-three">111</span>
+				<span class="stars stars-three">Три звезды</span>
 				<span class="rating">Рейтинг: 8,9</span>
 			</div>
 		</article>
@@ -154,7 +154,7 @@
 				</div>
 			</div>
 			<div class="result-hotel-level">
-				<span class="stars stars-two">111</span>
+				<span class="stars stars-two">Две звезды</span>
 				<span class="rating">Рейтинг: 9,2</span>
 			</div>
 		</article>
@@ -168,8 +168,7 @@
 				<a class="social-btn social-youtube" href="#">You Tube</a>
 			</div>
 			<div class="footer-developer">
-				<a href="https://htmlacademy.ru/intensive/htmlcss">
-					<img src="img/html-academy-black.png" width="195" height="39" alt="HTML Academy">
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><span >HTML Academy</span>
 				</a>
 			</div>
 		</footer>

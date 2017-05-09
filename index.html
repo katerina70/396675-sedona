@@ -7,7 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
 
@@ -28,25 +28,25 @@
 					<li>
 						<a href="inner.html">Гостиницы</a>
 					</li>
-					<div class="logo">
-						<a><img src="img/logo.png" width="138" height="70" alt="City of Sedona">
-						</a>
-					</div>
 				</ul>
+				<div class="logo">
+					<a><img src="img/logo.png" width="138" height="70" alt="City of Sedona">
+					</a>
+				</div>
 			</nav>
 		</header>
 		<section class="greeting">
 			<img src="img/greeting.jpg" width="1200" height="591" alt="Welcome to Sedona!">
 		</section>
 		<section class="description">
-			<h2>Седона &#8212 небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<h2>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</section>
 		<section class="features features-blue">
 			<div class="reasons-item">
 				<h2>Настоящий городок</h2>
-				<span>&#8212 №1 &#8212</span>
-				<p>Седона &#8212 не аттракцион для туристов, там течет своя жизнь</p>
+				<span>&#8212; №1 &#8212;</span>
+				<p>Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
 			<div class="reasons-image">
 				<img src="img/real-town.jpg" width="800" height="255" alt="Настоящий городок">
@@ -72,59 +72,59 @@
 			</div>
 			<div class="reasons-item">
 				<h2>Там есть мост дьявола</h2>
-				<span>&#8212 №2 &#8212</span>
+				<span>&#8212; №2 &#8212;</span>
 				<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 			</div>
 		</section>
 		<section class="features features-grey">
 			<div class="reasons-item">
 				<h2>Небольшая площадь</h2>
-				<span>&#8212 №3 &#8212</span>
+				<span>&#8212; №3 &#8212;</span>
 				<p>Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="reasons-item">
 				<h2>Красивая дорога</h2>
-				<span>&#8212 №4 &#8212</span>
+				<span>&#8212; №4 &#8212;</span>
 				<p>Ехать в Седону из Лас Вегаса совсем не скучно!</p>
 			</div>
 			<div class="reasons-item">
 				<h2>Мало туристов</h2>
-				<span>&#8212 №5 &#8212</span>
+				<span>&#8212; №5 &#8212;</span>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>
 			</div>
 		</section>
 		<section class="hotel">
 			<h1>Заинтересовались?</h1>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предожения гостиниц в Седоне</p>
-			<a href="#">Поиск гостиницы в Седоне</a>
+			<a class="booking-button" href="form.html">Поиск гостиницы в Седоне</a>
 		</section>
 		<section class="hotel-book">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505982906!2d-111.83015803238298!3d34.85437338102221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1493983390418" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505982906!2d-111.83015803238298!3d34.85437338102221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494251395391" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<div class="hotel-book-window">
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<div class="booking-dates">
 						<label for="check-in">Дата заезда:</label>
-						<input type="text" id="check-in" value="24 апреля 2017">
+						<input type="text" id="check-in" name="check-in-date" value="24 апреля 2017">
 						<span class="calendar"></span>
 					</div>
 					<div class="booking-dates">
 						<label for="check-out">Дата выезда:</label>
-						<input type="text" id="check-out" value="4 июля 2017">
+						<input type="text" id="check-out" name="check-in-date" value="4 июля 2017">
 						<span class="calendar"></span>
 					</div>
 					<div class="booking-adult">
 						<label for="guest-number-1">Взрослые:</label>
 						<button type="button" class="minus">&#8212</button>
-						<input type="number" id="guest-number-1" value="2">
+						<input type="number" id="guest-number-1" name="adult" value="2">
 						<button type="button" class="plus">+</button>
 					</div>
 					<div class="booking-children">
 						<label for="guest-number-2">Дети:</label>
-						<button type="button" class="minus">&#8212</button>
-						<input type="number" id="guest-number-2" value="0">
-						<button type="button" сlass="plus">+</button>
+						<button type="button" name="minus">&#8212</button>
+						<input type="number" id="guest-number-2" name="children" value="0">
+						<button type="button" name="minus">+</button>
 					</div>
-					<input type="submit" value="Найти">
+					<input type="submit" value="Найти" name="search">
 				</form>
 			</div>
 		</section>
@@ -138,10 +138,14 @@
 				<a class="social-btn social-youtube" href="#">You Tube</a>
 			</div>
 			<div class="footer-developer">
-				<a href="https://htmlacademy.ru/intensive/htmlcss"> </a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><span >HTML Academy</span></a>
 			</div>
 		</footer>
 	</div>
+	<script src="js/scripts.min.js">
+
+
+	</script>
 </body>
 
 </html>
