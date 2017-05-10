@@ -7,7 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
 
@@ -142,44 +142,7 @@
 			</div>
 		</footer>
 	</div>
-	<script >
-		var link = document.querySelector(".booking-button");
-		var close = document.querySelector(".hotel-book-window");
-		var open = document.querySelector(".hotel-book-window-close")
-		
-		
-		/*Кликнули на link(booking-button) и добавили close (hotel-book-window) класс hotel-book-window-close: окно закрылось*/
-		link.addEventListener("click", function (event) {
-			event.preventDefault();
-			close.classList.add("hotel-book-window-close");
-			});
-		
-		/*вот до этого места все понятно) Что дальше? Куда добавить класс hotel-book-window-open (который с анимацией) Добавить open (var open = document.querySelector(".hotel-book-window-close") класс hotel-book-window-open, удалив hotel-book-window-close? Но так не получается. 
-		link.addEventListener("click", function (event) {
-			event.preventDefault();
-				close.classList.remove("hotel-book-window-close")
-				open.classList.add("hotel-book-window-open");
-			});
-		
-		*/
-		/* Был еще вариант у меня. Кликнули на link и если добавлен класс hotel-book-window-close, удалить его и добавить hotel-book-window-open 	
-
-		link.addEventListener("click", function (event) {
-			if (close.classList.contains("hotel-book-window-close")){
-						event.preventDefault();
-						close.classList.remove("hotel-book-window-close");
-						open.classList.add("hotel-book-window-open");
-				
-			}
-			});
-		*/
-	
-			
-            
-			
-		
-		
-
+	<script src="js/scripts.min.js">
 	</script>
 </body>
 
