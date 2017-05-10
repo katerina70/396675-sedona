@@ -589,8 +589,7 @@
 		-webkit-animation-duration: 2s;
 		animation-duration: 2s;
 	}
-	@-webkit-keyframes show
-{
+	@-webkit-keyframes show {
 		0% {
 			transform: translate(-50%, -100%);
 		}
